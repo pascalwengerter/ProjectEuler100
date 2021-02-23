@@ -26,4 +26,4 @@ defmodule Triplet do
 end
 
 Triplet.solver(1000)
-|> IO.inspect(label: "This is the number you are looking for")
+|> IO.inspect(label: "This is the numbers you are looking for")
