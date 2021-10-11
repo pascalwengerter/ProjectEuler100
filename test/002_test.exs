@@ -9,8 +9,7 @@ defmodule Euler2Test do
     end
 
     test "Calculate sum of primes from 11 to 100" do
-      assert calculate(2, 4000001) == 4613732
+      assert calculate(2, 4_000_001) == 4_613_732
     end
   end
-
 end

@@ -13,8 +13,7 @@ defmodule Euler7Test do
     end
 
     test "Do the real challenge" do
-      assert search([13, 11, 7, 5, 3, 2], 10001) == 104743
+      assert search([13, 11, 7, 5, 3, 2], 10001) == 104_743
     end
   end
-
 end

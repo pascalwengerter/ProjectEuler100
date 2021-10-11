@@ -9,8 +9,7 @@ defmodule Euler3Test do
     end
 
     test "Calculate largest prime divider form 2 to 600851475143" do
-      assert calculate(600851475143) == 6857
+      assert calculate(600_851_475_143) == 6857
     end
   end
-
 end

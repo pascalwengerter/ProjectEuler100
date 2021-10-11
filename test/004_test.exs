@@ -9,8 +9,7 @@ defmodule Euler4Test do
     end
 
     test "Find palindromes from 100 to 999" do
-      assert run(100, 999) == 906609
+      assert run(100, 999) == 906_609
     end
   end
-
 end

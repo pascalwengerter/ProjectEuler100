@@ -1,6 +1,7 @@
 defmodule FindLargestPrimeDivider do
   def calculate(number) do
-    calculator(number, 2) # starting with the smallest prime number
+    # starting with the smallest prime number
+    calculator(number, 2)
   end
 
   defp calculator(input_number, start) when input_number == start do
@@ -8,8 +9,9 @@ defmodule FindLargestPrimeDivider do
   end
 
   defp calculator(input_number, start) do
-    if rem(input_number,start) == 0 do
-      calculator(trunc(input_number / start), start) # trunc() is to receive an integer
+    if rem(input_number, start) == 0 do
+      # trunc() is to receive an integer
+      calculator(trunc(input_number / start), start)
     else
       calculator(input_number, start + 1)
     end

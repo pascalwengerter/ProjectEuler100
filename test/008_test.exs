@@ -12,5 +12,4 @@ defmodule Euler8Test do
       assert calculate_products(5, '010101010101010102222201010101010010001') == 32
     end
   end
-
 end

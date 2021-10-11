@@ -8,5 +8,4 @@ defmodule Euler9Test do
       assert solver(1000) == %{"a" => 375, "b" => 200, "c" => 425}
     end
   end
-
 end

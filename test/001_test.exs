@@ -5,8 +5,7 @@ defmodule Euler1Test do
 
   describe "Testing the calculate_number function" do
     test "Find primes from 3 to 999" do
-      assert calculate_number(3, 999) == 233168
+      assert calculate_number(3, 999) == 233_168
     end
   end
-
 end

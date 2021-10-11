@@ -1,13 +1,13 @@
 defmodule AdjacentDigits do
-    def calculate_products(chunk_size, input_number) do
-        Enum.chunk_every(input_number, chunk_size, 1, :discard)
-        |> Enum.map(fn x -> 
-            List.to_integer(x)
-            |> Integer.digits()
-            |> Enum.reduce(fn y, acc -> y * acc end)
-        end)
-        |> Enum.max()
-    end
+  def calculate_products(chunk_size, input_number) do
+    Enum.chunk_every(input_number, chunk_size, 1, :discard)
+    |> Enum.map(fn x ->
+      List.to_integer(x)
+      |> Integer.digits()
+      |> Enum.reduce(fn y, acc -> y * acc end)
+    end)
+    |> Enum.max()
+  end
 end
 
 # Uncomment below to test real challenge

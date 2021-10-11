@@ -21,9 +21,8 @@
 # New solution
 defmodule FindThreeFiveRemainders do
   def calculate_number(range_low, range_high) do
-    Range.new(range_low,range_high)
-      |> Enum.filter(fn x -> (rem(x, 3) == 0) or (rem(x, 5) == 0) end)
-      |> Enum.reduce(0, fn i, acc -> i + acc end)
+    Range.new(range_low, range_high)
+    |> Enum.filter(fn x -> rem(x, 3) == 0 or rem(x, 5) == 0 end)
+    |> Enum.reduce(0, fn i, acc -> i + acc end)
   end
 end
-

@@ -13,8 +13,7 @@ defmodule Euler5Test do
     end
 
     test "Check for the smallest positive number that is evenly divisible by all of the numbers from 2 to 20, starting at 232790000" do
-      assert run(232790000, 2..20) == 232792560
+      assert run(232_790_000, 2..20) == 232_792_560
     end
   end
-
 end
