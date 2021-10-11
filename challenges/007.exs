@@ -24,6 +24,3 @@ defmodule PrimeFinder do
     !Enum.any?(2..floored_sqrt, &(rem(n, &1) == 0))
   end
 end
-
-PrimeFinder.search([13, 11, 7, 5, 3, 2], 10001)
-|> IO.inspect(label: "This is the number you are looking for")

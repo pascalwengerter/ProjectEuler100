@@ -11,6 +11,10 @@ defmodule Euler7Test do
     test "Find the sixth" do
       assert search([11, 7, 5, 3, 2], 6) == 13
     end
+
+    test "Do the real challenge" do
+      assert search([13, 11, 7, 5, 3, 2], 10001) == 104743
+    end
   end
 
 end

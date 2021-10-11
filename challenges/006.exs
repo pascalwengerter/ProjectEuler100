@@ -12,6 +12,3 @@ defmodule DiffSumsquareSquaresum do
         (b*b) - a
     end
 end
-
-DiffSumsquareSquaresum.calculate(1..100)
-|> IO.inspect(label: "This is the number you are looking for")

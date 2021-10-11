@@ -19,7 +19,11 @@
 # |> IO.inspect(label: "This is the number you are looking for")
 
 # New solution
-Range.new(3,999)
-|> Enum.filter(fn x -> (rem(x, 3) == 0) or (rem(x, 5) == 0) end)
-|> Enum.reduce(0, fn i, acc -> i + acc end)
-|> IO.inspect(label: "This is the number you are looking for")
+defmodule FindThreeFiveRemainders do
+  def calculate_number(range_low, range_high) do
+    Range.new(range_low,range_high)
+      |> Enum.filter(fn x -> (rem(x, 3) == 0) or (rem(x, 5) == 0) end)
+      |> Enum.reduce(0, fn i, acc -> i + acc end)
+  end
+end
+

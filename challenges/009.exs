@@ -24,6 +24,3 @@ defmodule Triplet do
         |> Map.new(fn [k, v] -> {k, v} end)
     end
 end
-
-Triplet.solver(1000)
-|> IO.inspect(label: "This is the numbers you are looking for")

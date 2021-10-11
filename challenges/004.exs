@@ -23,6 +23,3 @@ defmodule Palindromefinder do
         end
     end
 end
-
-Palindromefinder.run(100, 999)
-|> IO.inspect(label: "This is the number you are looking for")

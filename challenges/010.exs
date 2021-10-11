@@ -5,7 +5,7 @@ defmodule PrimeSumer do
     end
 
     defp find_all_primes_below(m) do
-        Enum.filter(1..m, fn x -> prime?(x) end) |> IO.inspect()
+        Enum.filter(1..m, fn x -> prime?(x) end)
     end
 
     defp prime?(n) when n in [2, 3], do: true
@@ -16,6 +16,3 @@ defmodule PrimeSumer do
         !Enum.any?(2..floored_sqrt, &(rem(n, &1) == 0))
     end
 end
-
-PrimeSumer.calculate_all_below(2000000)
-|> IO.inspect(label: "This is the number you are looking for")

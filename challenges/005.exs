@@ -13,7 +13,3 @@ defmodule Checker do
         |> Enum.all?(fn x -> x == true end)
     end
 end
-
-# Checker.run(0, 2..20)
-Checker.run(232790000, 2..20) # returns 232792560
-|> IO.inspect(label: "This is the number you are looking for")

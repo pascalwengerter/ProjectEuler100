@@ -1,5 +1,11 @@
-defmodule Solver do
-  def find_fibonaccis_from(start, max) do
+defmodule SumPrimesFromTo do
+  def calculate(min, max) do
+    find_fibonaccis_from(min, max)
+      |> Enum.filter(fn x -> rem(x, 2) == 0 end)
+      |> Enum.reduce(0, fn i, acc -> i + acc end)
+  end
+
+  defp find_fibonaccis_from(start, max) do
     calculate_next_fibonacci([start, 1], max)
   end
 
@@ -12,8 +18,3 @@ defmodule Solver do
     end
   end
 end
-
-Solver.find_fibonaccis_from(2, 4000001)
-|> Enum.filter(fn x -> rem(x, 2) == 0 end)
-|> Enum.reduce(0, fn i, acc -> i + acc end)
-|> IO.inspect(label: "This is the number you are looking for")

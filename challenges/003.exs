@@ -1,5 +1,5 @@
-defmodule Solver do
-  def find_largest_prime_divider(number) do
+defmodule FindLargestPrimeDivider do
+  def calculate(number) do
     calculator(number, 2) # starting with the smallest prime number
   end
 
@@ -15,6 +15,3 @@ defmodule Solver do
     end
   end
 end
-
-Solver.find_largest_prime_divider(600851475143)
-|> IO.inspect(label: "This is the number you are looking for")
