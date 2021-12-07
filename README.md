@@ -9,3 +9,9 @@ To start the test for a specific challenge, run
 ```sh
 mix test test/euler_XXX_test.exs
 ```
+
+To format the codebase, run
+
+```sh
+mix format challenge/* && mix format test/*
+```
